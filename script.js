@@ -13,6 +13,7 @@ const assetHeading = document.getElementsByClassName("asset-heading");
 const assetsContainer = document.getElementsByClassName("assets");
 const assetFooter = document.getElementsByClassName("asset-footer");
 const asset3Content = document.getElementById("data-from-jason");
+const assetWrapper = document.getElementsByClassName("asset-wrapper")[0];
 // variables
 
 let journeyBoxStaus = false;
@@ -22,7 +23,11 @@ let openThreadStatus = true;
 // event handlers
 
 journeyBoxOpener.addEventListener("click", openJourneyBox);
-
+document
+  .getElementsByClassName("asset-wrapper")[0]
+  .addEventListener("scroll", () => {
+    console.log(assetWrapper.pageYOffset);
+  });
 // function
 function dropDownAsset(i) {
   if (!dropDownStatus) {

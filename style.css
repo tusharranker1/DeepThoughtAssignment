@@ -186,6 +186,11 @@
     transition: margin 0.3s, font-weight 0.3s;
 }
 
+.tasks a {
+    text-decoration: none;
+    color: black;
+}
+
 .tasks:hover {
     margin: 10px;
     font-weight: bold;
