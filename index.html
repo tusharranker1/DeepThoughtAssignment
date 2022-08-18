@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskProject1</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bangers&family=Beau+Rivage&family=Bebas+Neue&family=Cairo:wght@200&family=Comforter&family=Dancing+Script&family=Fascinate&family=Festive&family=Indie+Flower&family=Island+Moments&family=Kanit:wght@300&family=Lobster&family=Montserrat:wght@300&family=Neonderthaw&family=Orelega+One&family=Pacifico&family=Permanent+Marker&family=Rowdies&family=Rubik+Beastly&family=Rubik+Moonrocks&family=Sacramento&family=Satisfy&family=Signika:wght@300&family=Supermercado+One&family=Syne+Tactile&family=Titan+One&family=Yellowtail&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="navBar">
+        <div id="logo">
+            <img src="https://deepthought.education/assets/images/logo/logo.svg" alt="" height="100%" width="100%">
+        </div>
+        <div id="nav-items">
+            <ul id="list-items">
+                <li class="items"><img height="80%" width="90%" src="icons/home (2).png" alt=""></li>
+                <li class="items"><img height="60%" width="70%" src="icons/watchOut.png" alt=""></li>
+                <li class="items"><img height="60%" width="70%" src="icons/setting.png" alt=""></li>
+                <li class="items"><img height="60%" width="60%" src="icons/notification.png" alt=""></li>
+                <li class="items"><img height="60%" width="25%" src="icons/more.png" alt=""></li>
+            </ul>
+        </div>
+    </div>
+    <div id="main-conatiner">
+        <div id="box1">
+            <h1>Journey Board
+                <div id="mainLinesWrapper">
+                    <div id="lines-wrapper">
+                        <div class="lines"></div>
+                        <div class="lines"></div>
+                        <div class="lines"></div>
+                    </div>
+                </div>
+            </h1>
+            <div id="taskDescription">
+                <h2>
+                    1. Name of the task goes here
+                </h2>
+                <ul id="taskList">
+                    <li class="tasks">Asset heading 1</li>
+                    <li class="tasks">Asset heading 2</li>
+                    <li class="tasks">Asset heading 3</li>
+                    <li class="tasks">Asset heading 4</li>
+                    <li class="tasks">Asset heading 5</li>
+                    <li class="tasks">Asset heading 6</li>
+                </ul>
+            </div>
+
+
+        </div>
+        <div id="box2">
+            <div id="box2-header">
+                You are Taking Challenges of New Projects
+            </div>
+
+            <h1 id="box2-heading">
+                Name of the task goes here
+            </h1>
+            <div class="asset-wrapper">
+                <div class="assets" id="asset1">
+                    <div class="asset-footer" onclick="dropDownAsset(0)"><img src="icons/down-arrow.png" alt=""></div>
+                    <h1 class="asset-heading">Asset &nbsp; Heading &nbsp; 1</h1>
+                    <div id="asset1-content"></div>
+                </div>
+                <div class="assets" id="asset2">
+                    <div class="asset-footer" onclick="dropDownAsset(1)"><img src="icons/down-arrow.png" alt=""></div>
+                    <h1 class="asset-heading">Asset &nbsp;Heading&nbsp; 2</h1>
+                    <div id="thread-wrapper">
+                        <div class="thread" id="thread1">
+                            <h1 class="thread-heading">
+                                <img src="icons/down-arrow.png" alt="" class="thread-drop-dowm">
+                                Thread A
+                            </h1>
+                            <div class="sub-thread-wrapper">
+                                <div class="sub-thread" id="sub-thread1">Sub Thread1
+                                    <input type="text" id="sub-thread1-input">
+                                </div>
+                                <div class="sub-thread" id="sub-thread2">Sub Interpretation
+                                    <input type="text" id="sub-thread2-input">
+                                </div>
+                            </div>
+                            <div class="category-selection-wrapper">
+                                <img src="icons/Vector (1).png" alt="">
+                                <img src="icons/comment-alt.png" alt="">
+                                <select name="" class="selections">
+                                    <option class="fromOption" id="fromOption1" value="-">Select Your Option</option>
+                                    <option class="fromOption" id="fromOption1" value="option1">option1</option>
+                                    <option class="fromOption" id="fromOption1" value="option2">option2</option>
+
+                                </select>
+                                <select name="" class="selections">
+                                    <option class="fromOption" id="fromOption1" value="-">Select Your Option</option>
+                                    <option class="fromOption" id="fromOption1" value="option1">option1</option>
+                                    <option class="fromOption" id="fromOption1" value="option2">option2</option>
+                                </select>
+                            </div>
+                            <div class="add-sub-thread">
+                                <img src="icons/Group 3.png" alt="">
+                            </div>
+                            <div class="summary-wrapper">
+                                <div class="thread-summary">Summary for Thread A
+                                    <input type="text" id="thread-summary-input">
+                                </div>
+                            </div>
+                            <div class="emotion-threadCredit-wrapper">
+                                <img src="icons/Group 8.png" alt="">
+                                <select name="" class="selections">
+                                    <option class="fromOption" id="Option1" value="-">Select Emotion</option>
+                                    <option class="fromOption" id="Option1" value="option1">option1</option>
+                                    <option class="fromOption" id="Option1" value="option2">option2</option>
+                                </select>
+                            </div>
+                            <div class="new-thread">
+                                <img src="icons/Group 2.png" alt="">
+                            </div>
+                            <div class="save-thread">
+                                <img src="icons/Group 7.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="assets" id="asset3">
+                    <div class="asset-footer" onclick="dropDownAsset(2)"><img src="icons/down-arrow.png" alt="">
+                    </div>
+                    <h1 class="asset-heading">Asset &nbsp; Heading &nbsp; 3</h1>
+                    <div id="asset3-content">
+                        <div id="data-from-jason">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="assets" id="asset4">
+                    <div class="asset-footer" onclick="dropDownAsset(3)"><img src="icons/down-arrow.png" alt="">
+                    </div>
+                    <h1 class="asset-heading">Asset &nbsp; Heading &nbsp; 4</h1>
+                    <div id="asset4-content">
+
+                    </div>
+                </div>
+                <div class="assets" id="asset5">
+                    <div class="asset-footer" onclick="dropDownAsset(4)"><img src="icons/down-arrow.png" alt="">
+                    </div>
+                    <h1 class="asset-heading">Asset &nbsp; Heading &nbsp; 5</h1>
+
+                </div>
+                <div class="assets" id="asset6">
+                    <div class="asset-footer" onclick="dropDownAsset(5)"><img src="icons/down-arrow.png" alt="">
+                    </div>
+                    <h1 class="asset-heading">Asset &nbsp; Heading &nbsp; 6</h1>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- script -->
+    <script src="script.js"></script>
+</body>
+
+</html>
